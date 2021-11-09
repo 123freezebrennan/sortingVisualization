@@ -146,9 +146,9 @@ async function CountSort(){
 
 async function ShellSort(){
     var blocks = document.querySelectorAll(".block");
-    let increment = blocks.length / 2;
+    let increment = Math.floor(blocks.length / 2);
     while (increment > 0){
-        for (var i = increment; i < blocks.length; i++){
+        for (var i = increment; i < Math.floor(blocks.length); i++){
             var j = i;
             var temp = blocks[i].childNodes[0].innerHTML;
             while (j >= increment && Number(blocks[j - increment].childNodes[0].innerHTML) > Number(temp)){
@@ -178,6 +178,7 @@ async function ShellSort(){
         await new Promise((resolve) =>setTimeout(() => {resolve();}, delay / 2));
         blocks[i].style.backgroundColor = "#13CE66";
     }
+    return;
 }
 
 async function PigeonHoleSort(){
