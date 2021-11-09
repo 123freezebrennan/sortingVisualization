@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+  
+<body>
+    <p class="header">Sorting Algorithms Visualization</p>
+    <div class="sliderContainer">
+        <p>Values: <span id="valueFront"></span></p>
+        <input type="range" min = "10" max = "100" value = 30 class = "slider" id = "range">
+    </div>
+    <div class = "sorters">
+        <button id = "bubbleSort">Bubble Sort</button>
+        <button id ="selectionSort">Selection Sort</button>
+        <button id ="insertionSort">Insertion Sort</button>
+        <button id ="countSort">Counting Sort</button>
+        <button id ="shellSort">Shell Sort</button>
+
+    </div>
+    <p class = "steps"> </p>
+    <div id="array"></div>
+    <script src="script.js"></script>
+</body>
+  
+</html>
